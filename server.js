@@ -6,8 +6,11 @@ const express = require('express'),
     corsOptions = require('./config/corsConfig'),
     credentials = require('./middleware/credentials');
 
+app.use(cors({
+  origin: "*"
+}));    
 app.use(credentials)
-app.use(cors(corsOptions))
+//app.use(cors(corsOptions))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
