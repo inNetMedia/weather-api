@@ -1,4 +1,4 @@
-const whiteList = ['http://127.0.0.1:5500']
+const whiteList = ['http://127.0.0.1:5500', 'https://innetmedia.github.io/weatherApp0.1/']
 
 const corsOptions = {
     origin:(origin, callback) => {
